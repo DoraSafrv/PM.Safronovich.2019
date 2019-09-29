@@ -12,7 +12,7 @@
 ### 11.09.2019 
 | Task | Task Status | Additional/Comments |
 | -------- | -------- | --------|  
-| 1 | ![Scheduled](https://github.com/AnzhelikaKravchuk/.NET-Training.-Spring-2019/blob/master/Pictures/icons-ok.png)|[https://github.com/DoraSafrv/PM.Safronovich.2019/blob/master/1%20семестр/SAFRONOVICH%2024.09.19.cpp](/)
+| 1 | ![Scheduled](https://github.com/AnzhelikaKravchuk/.NET-Training.-Spring-2019/blob/master/Pictures/icons-ok.png)|[1 семестр/SAFRONOVICH 24.09.19.cpp](/)
 | 2 | ![Scheduled](https://github.com/AnzhelikaKravchuk/.NET-Training.-Spring-2019/blob/master/Pictures/icons-target.png)|[Link to cpp-file](/)
 | 3 | ![Scheduled](https://github.com/AnzhelikaKravchuk/.NET-Training.-Spring-2019/blob/master/Pictures/icons-target.png)|[Link to cpp-file](/)
 ---
