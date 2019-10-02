@@ -14,7 +14,7 @@
 | -------- | -------- | --------|  
 | 1 | ![Scheduled](https://github.com/AnzhelikaKravchuk/.NET-Training.-Spring-2019/blob/master/Pictures/icons-ok.png)|[SAFRONOVICH 24.09.19.cpp] (https://github.com/DoraSafrv/PM.Safronovich.2019/blob/master/1%20%D1%81%D0%B5%D0%BC%D0%B5%D1%81%D1%82%D1%80/SAFRONOVICH%2024.09.19.cpp)
 | 2 | ![Scheduled](https://github.com/AnzhelikaKravchuk/.NET-Training.-Spring-2019/blob/master/Pictures/icons-ok.png)|[29.09.2019.cpp](https://github.com/DoraSafrv/PM.Safronovich.2019/blob/master/1%20%D1%81%D0%B5%D0%BC%D0%B5%D1%81%D1%82%D1%80/29.09.2019.cpp)
-| 3 |![Scheduled](https://github.com/AnzhelikaKravchuk/.NET-Training.-Spring-2019/blob/master/Pictures/icons-ok.png) |[Link to cpp-file](/)
+| 3 |![Scheduled](https://github.com/AnzhelikaKravchuk/.NET-Training.-Spring-2019/blob/master/Pictures/icons-ok.png) |[01.10.2019.cpp](https://github.com/DoraSafrv/PM.Safronovich.2019/blob/master/1%20%D1%81%D0%B5%D0%BC%D0%B5%D1%81%D1%82%D1%80/01.10.2019.cpp)
 ---
 
 ### 25.09.2019 
