@@ -5,15 +5,13 @@ using namespace std;
 int main()
 {
 	int n;
-	int a, b, c;
 
 	while (true)
 	{
 		cout << "n= ";
-		cin >> a; cin >> b; cin >> c;
-		n = a * 100 + b * 10 + c;
+		cin >> n;
 
-		if (a < 2 && a >= 0)
+		if (n > 0 && n < 101)
 		{
 			break;
 		}
@@ -29,7 +27,7 @@ int main()
 	}
 	if (n > 19)
 	{
-		switch (b)
+		switch (n % 10)
 		{
 		case 2:
 			cout << "twenty";
@@ -67,7 +65,7 @@ int main()
 	}
 	if (n < 10 || n>19)
 	{
-		switch (c)
+		switch (n % 100)
 		{
 		case 1:
 			cout << "one";
@@ -108,7 +106,7 @@ int main()
 	}
 	else if (n > 9 && n < 20)
 	{
-		switch (b * 10 + c)
+		switch (n)
 		{
 		case 10:
 			cout << "ten";
