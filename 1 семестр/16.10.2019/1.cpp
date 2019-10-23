@@ -5,14 +5,14 @@
 using namespace std;
 void menu();
 void workWithConsole();
-int primeNumber();
-void primeNumberTests(int, char);
+const char* primeNumber(int number);
+void primeNumberTests(int actual1, const char* expected1);
+void TEST();
 
 int main()
 {
 	menu();
 	return 0;
-
 }
 
 void menu()
@@ -28,7 +28,7 @@ void menu()
 			workWithConsole();
 			break;
 		case '2':
-			runTests();
+			TEST();
 			break;
 		case '3':
 			return;
@@ -58,44 +58,63 @@ void workWithConsole()
 	}
 }
 
-int primeNumber(int number)
+const char* primeNumber(int number)
 {
-	
+	const char* answer1;
+	if (number == 2 || number == 3)
+	{
+		cout << "Prime" << endl;
+		answer1 = "Prime";
+		return answer1;
+	}
 	for (int i = 2; i <= sqrt(number); i++)
 	{
+		if (number != 3 && number % 3 == 0)
+		{
+			cout << "Not prime" << endl;
+			answer1 = "Not";
+			return answer1;
+		}
 		if (number % i == 0)
 		{
 			cout << "Not Prime" << endl;
-			char notprime; 
-			return 0;
+			answer1 = "Not";
+			return answer1;
+		}
+		else
+		{
+			cout << "Prime" << endl;
+			answer1 = "Prime";
+			return answer1;
 		}
 	}
-	char prime;
-	cout << "Prime" << endl;
-	system("pause");
-	return 0;
 }
 
-void runTests()
+void primeNumberTests(int actual1, const char* expected1)
 {
-	int testNumber = 1;
-
-	primeNumberTests (testNumber++, 13, char );
-	
-}
-
-void primeNumberTests(int number)
-{
-	int number = 2;
-	char (prime);
-
-	if (actual1 == expected1 && actual2 == expected2 && actual3 == expected3)
+	const char* PRIME1;
+	PRIME1 = primeNumber(actual1);
+	if (PRIME1 == expected1)
 	{
-		cout << "Case #" << testCaseNumber << " is correct. :)" << endl;
+		cout << "Number: " << actual1;
+		cout << endl;
+		cout << "Expected answer: " << expected1 << endl;
+		cout << "This is correct. :)" << endl;
+		cout << endl;
 	}
 	else
 	{
-		cout << "Case #" << testCaseNumber << " IS NOT CORRECT. :(" << endl;
-		cout << "\t actual = " << actual << ", but expected = " << expectedCount << endl;
+		cout << "This is incorrect. :(" << endl;
+		cout << "Actual = " << actual1 << ", but expected is  " << expected1 << endl;
+		cout << endl;
 	}
+}
+
+void TEST()
+{
+	primeNumberTests(7, "Prime");
+	primeNumberTests(8, "Not");
+	primeNumberTests(2, "Prime");
+	primeNumberTests(4, "Not");
+	primeNumberTests(5, "Prime");
 }
