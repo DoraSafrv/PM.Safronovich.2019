@@ -5,9 +5,9 @@
 using namespace std;
 void menu();
 void workWithConsole();
-const char* primeNumber(int number);
+bool isPrimeNumber(int number);
 void primeNumberTests(int actual1, const char* expected1);
-void TEST();
+void test();
 
 int main()
 {
@@ -28,7 +28,7 @@ void menu()
 			workWithConsole();
 			break;
 		case '2':
-			TEST();
+			test();
 			break;
 		case '3':
 			return;
@@ -58,63 +58,44 @@ void workWithConsole()
 	}
 }
 
-const char* primeNumber(int number)
+bool isPrimeNumber(int number)
 {
-	const char* answer1;
-	if (number == 2 || number == 3)
+	if (number < 2)
 	{
-		cout << "Prime" << endl;
-		answer1 = "Prime";
-		return answer1;
-	}
+		return false;
+    }
+
 	for (int i = 2; i <= sqrt(number); i++)
 	{
-		if (number != 3 && number % 3 == 0)
-		{
-			cout << "Not prime" << endl;
-			answer1 = "Not";
-			return answer1;
-		}
 		if (number % i == 0)
 		{
-			cout << "Not Prime" << endl;
-			answer1 = "Not";
-			return answer1;
-		}
-		else
-		{
-			cout << "Prime" << endl;
-			answer1 = "Prime";
-			return answer1;
+			return false;
 		}
 	}
+
+	return true;
 }
 
-void primeNumberTests(int actual1, const char* expected1)
+void primeNumberTests(int number, bool expected)
 {
-	const char* PRIME1;
-	PRIME1 = primeNumber(actual1);
-	if (PRIME1 == expected1)
+	if (isPrimeNumber(number) == expected)
 	{
-		cout << "Number: " << actual1;
-		cout << endl;
-		cout << "Expected answer: " << expected1 << endl;
-		cout << "This is correct. :)" << endl;
-		cout << endl;
+		cout << ":)" << endl;
 	}
 	else
 	{
-		cout << "This is incorrect. :(" << endl;
-		cout << "Actual = " << actual1 << ", but expected is  " << expected1 << endl;
-		cout << endl;
+		cout << ":(" << endl;
 	}
 }
 
-void TEST()
+void test()
 {
-	primeNumberTests(7, "Prime");
-	primeNumberTests(8, "Not");
-	primeNumberTests(2, "Prime");
-	primeNumberTests(4, "Not");
-	primeNumberTests(5, "Prime");
+	primeNumberTests(7, true);
+	primeNumberTests(8, false);
+	primeNumberTests(2, true);
+	primeNumberTests(-400, false);
+	primeNumberTests(5, true);
+	primeNumberTests(594583736282, false);
+	primeNumberTests(-9870005, false);
+	primeNumberTests(0, false);
 }
