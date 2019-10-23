@@ -39,8 +39,8 @@
 ### 16.10.2019 .
 | Task | Task Status | Additional/Comments |
 | -------- | -------- | --------|  
-| 1 | ![Scheduled](https://github.com/AnzhelikaKravchuk/.NET-Training.-Spring-2019/blob/master/Pictures/icons-ok.png)|[1.cpp](1 семестр/16.10.2019/1.cpp)
-| 2 | ![Scheduled](https://github.com/AnzhelikaKravchuk/.NET-Training.-Spring-2019/blob/master/Pictures/icons-ok.png)|[2.cpp](1 семестр/16.10.2019/2.cpp)
+| 1 | ![Scheduled](https://github.com/AnzhelikaKravchuk/.NET-Training.-Spring-2019/blob/master/Pictures/icons-ok.png)|[1.cpp](https://github.com/DoraSafrv/PM.Safronovich.2019/blob/master/1%20%D1%81%D0%B5%D0%BC%D0%B5%D1%81%D1%82%D1%80/16.10.2019/1.cpp)
+| 2 | ![Scheduled](https://github.com/AnzhelikaKravchuk/.NET-Training.-Spring-2019/blob/master/Pictures/icons-ok.png)|[2.cpp](https://github.com/DoraSafrv/PM.Safronovich.2019/blob/master/1%20%D1%81%D0%B5%D0%BC%D0%B5%D1%81%D1%82%D1%80/16.10.2019/2.cpp)
 | 3 | ![Scheduled](https://github.com/AnzhelikaKravchuk/.NET-Training.-Spring-2019/blob/master/Pictures/icons-ok.png)|[4.cpp](https://github.com/DoraSafrv/PM.Safronovich.2019/blob/master/1%20%D1%81%D0%B5%D0%BC%D0%B5%D1%81%D1%82%D1%80/16.10.2019/4.cpp)
 | 4 | ![Scheduled](https://github.com/AnzhelikaKravchuk/.NET-Training.-Spring-2019/blob/master/Pictures/icons-ok.png)|[5.cpp](https://github.com/DoraSafrv/PM.Safronovich.2019/blob/master/1%20%D1%81%D0%B5%D0%BC%D0%B5%D1%81%D1%82%D1%80/16.10.2019/5.cpp) 
 ---
