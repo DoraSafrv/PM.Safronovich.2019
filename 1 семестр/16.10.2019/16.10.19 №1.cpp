@@ -1,13 +1,23 @@
-﻿#include <iostream>
+#include <iostream>
 #include <math.h>
-#include "MenuFunctions.h"
+
 
 using namespace std;
 void menu();
 void workWithConsole();
 bool isPrimeNumber(int number);
-void primeNumberTests(int actual1, const char* expected1);
 void test();
+void menuText();
+
+
+void menuText()
+{
+	cout << "Press 1 to work with the console." << endl;
+	cout << "Press 2 to run tests." << endl;
+	cout << "Press 3 to exit." << endl;
+}
+
+
 
 int main()
 {
@@ -54,7 +64,7 @@ void workWithConsole()
 			cout << "Please enter number > 1!";
 			break;
 		}
-		primeNumber(number);
+		isPrimeNumber(number);
 	}
 }
 
@@ -62,17 +72,21 @@ bool isPrimeNumber(int number)
 {
 	if (number < 2)
 	{
+		cout << "not Prime" << endl;
 		return false;
-    }
+		
+	}
 
 	for (int i = 2; i <= sqrt(number); i++)
 	{
 		if (number % i == 0)
 		{
+			cout << "not Prime" << endl;
 			return false;
 		}
 	}
 
+	cout << "Prime"<< endl;
 	return true;
 }
 
