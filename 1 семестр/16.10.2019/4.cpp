@@ -2,45 +2,65 @@
 #include <math.h>
 
 using namespace std;
+void menuText();
+void menu();
 
-int size(int a)
+
+void menuText()
 {
-	int size_ = 0;
-
-	while (a > 0)
-	{
-		size_++;
-		a /= 10;
-	}
-
-	return size_;
+	cout << "Press 1 to work with the console." << endl;
+	cout << "Press 2 to run tests." << endl;
+	cout << "Press 3 to exit." << endl;
 }
 
-void doRa(int n, int was, int became)
+void menu()
 {
-	while (n > 0)
+	while (true)
 	{
-		int buffer = n / (int)pow(10, size(n) - 1);
-		n %= (int)pow(10, size(n) - 1);
-
-		if (buffer == was)
+		char operation;
+		menuText();
+		cin >> operation;
+		switch (operation)
 		{
-			cout << became;
+		case '1':
+			workWithConsole();
+			break;
+		case '2':
+			test();
+			break;
+		case '3':
+			return;
+		default:
+			cout << "Invalid operation. Try again." << endl;
 		}
-		else
-		{
-			cout << buffer;
-		}
+		system("pause");
+		system("cls");
 	}
 }
 
 int main()
 {
-	int n, was, became;
-	cin >> n >> was >> became;
-
-	doRa(n, was, became);
-
-	system("pause");
+	menu();
 	return 0;
+}
+
+
+short enterDigit()
+{
+	short d;
+
+	while (true)
+	{
+		cout << "Enter digit (0..9):";
+		cin >> d;
+		if (d >= 0 && d <= 9)
+		{
+			break;
+		}
+		cout << "Not didgits! Try again." << endl;
+		system("pause");
+		system("cls");
+	}
+
+	return d;
 }

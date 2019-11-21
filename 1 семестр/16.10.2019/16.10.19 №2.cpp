@@ -1,18 +1,19 @@
-﻿#include <iostream>
+#include <iostream>
 
 using namespace std;
 
 int enterNumber();
-void displayResult(int, short, int);
-void countTests(int, int, short, short, short);
+void test();
 void menu();
-void workWithConsole();
-void runTests();
+bool workWithConsole(int buffer);
+void runTests(int number, int result, bool expected);
 void menuText();
+int reverse(int number);
 
 
 int main()
 {
+	int number;
 	menu();
 	return 0;
 }
@@ -27,10 +28,10 @@ void menu()
 		switch (operation)
 		{
 		case '1':
-			workWithConsole();
+			workWithConsole (true);
 			break;
 		case '2':
-			runTests();
+			test();
 			break;
 		case '3':
 			return;
@@ -49,33 +50,40 @@ void menuText()
 	cout << "Press 3 to exit." << endl;
 }
 
-void workWithConsole()
+bool workWithConsole(int buffer)
 {
 	int number = enterNumber();
 
-	if (number == reverse(number))
+
+	if ( number == reverse(buffer))
+	{
 		cout << "True";
+		return true;
+	}
 	else
+	{
 		cout << "False";
+		return false;
+	}
 
 	system("pause");
-	return 0;
+	
 }
 
 int enterNumber()
 {
 	int number;
-	cout << "number = "; 
+	cout << "number = ";
 	cin >> number;
 
 	return number;
 }
 
 int reverse(int number)
-{
+{ 
 	int buffer = 0;
 
-	while (number > 0)
+	while ( number > 0 )
 	{
 		buffer = buffer * 10 + number % 10;
 		number /= 10;
@@ -84,25 +92,35 @@ int reverse(int number)
 	return buffer;
 }
 
-void runTests()
-{
-	int testNumber = 1;
-
-	countTests(testNumber++, );
-	countTests(testNumber++,);
-
-}
-
-void countTests()
+void runTests(int buffer,int result, bool expected)
 {
 
-	if ()
+	bool localExpected = false;
+
+	if (result == reverse(buffer))
 	{
-		cout << "Case #" << testCaseNumber << " is correct. :)" << endl;
+		localExpected = true;
+	}
+
+	if (localExpected == expected)
+	{
+		cout << ":)" << endl;
 	}
 	else
 	{
-		cout << "Case #" << testCaseNumber << " IS NOT CORRECT. :(" << endl;
-		//cout << "\t actual = " << actual << ", but expected = " << expectedCount << endl;
+		cout << ":(" << endl;
 	}
+
+}
+
+void test()
+{
+	runTests(414, 414, true);
+	runTests(1, 1, true);
+	runTests(55, 55, true);
+	runTests(4, 555, false);
+	runTests(46564, 46564, true);
+	runTests(78, 3, false);
+	runTests(-53478, 5, false);
+	runTests(-400, 5, false);
 }
