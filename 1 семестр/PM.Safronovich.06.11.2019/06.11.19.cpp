@@ -75,19 +75,19 @@ void typeOfSequence(int* ptr, int num) {   //4 task
 		}
 	}
 	if (not_decreasing == num) {
-		std::cout << "function does not increase ";
+		cout << "function does not increase ";
 	} 
 	else if (not_increasing == num) {
-		std::cout << "function does not increases ";
+		cout << "function does not increases ";
 	} 
 	else if (increasing == num) {
-		std::cout << "function increases ";
+		cout << "function increases ";
 	} 
 	else if(decreasing == num) {
-		std::cout << "function decreases ";
+		cout << "function decreases ";
 	}
 	else {
-		std::cout << "not categorized";
+		cout << "not categorized";
 	}
 }
 
@@ -95,7 +95,7 @@ void typeOfSequence(int* ptr, int num) {   //4 task
 
 void output(int* ptr, int num) {
 	for (int i = 0; i < num; i++) {
-		std::cout << *(ptr + i) << "\t";
+		cout << *(ptr + i) << "\t";
 	}
 }
 
@@ -103,12 +103,12 @@ void output(int* ptr, int num) {
 
 int main() {
 	int num;
-	std::cout << "Enter integer value: ";
-	std::cin >> num;
+	cout << "Enter integer value: ";
+	cin >> num;
 
 	int* arr = new int[num];
 	for (int i = 0; i < num; i++) {
-		std::cin >> arr[i];
+		cin >> arr[i];
 	}
 
 	typeOfSequence(arr, num);
