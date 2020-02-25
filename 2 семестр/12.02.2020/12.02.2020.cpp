@@ -1,5 +1,3 @@
-﻿// ArrayOfStructs.cpp : Defines the entry point for the console application.
-
 #include"PointLibrary.h"
 #include <iostream>
 
