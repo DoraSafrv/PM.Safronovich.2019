@@ -20,36 +20,6 @@ void Swap(double* a, double* b);
 
 int main()
 {
-#pragma region MyRegion
-	//Point point;
-//DisplayPoint(point);
-//EnterPoint(point);
-//DisplayPoint(point);
-//point.x = 0.9;
-//point.y = -0.5;
-/*point.move(0.1, 0.6);
-Point point1(12, 45);
-point1.move(0.12, 0.78);*/
-//EnterPoint(point);
-//system("cls");
-//DisplayPoint(point);
-	//Point* ppoint = new Point;
-	//delete ppoint;
-	//EnterPoint(ppoint);
-	//system("cls");
-	//ppoint->move(1, 23);
-	//DisplayPoint(ppoint);
-	//DisplayPoint(point);
-	//Point* p = new Point;
-	//std::cout << sizeof(Point) << std::endl;
-	/*int n = 10;
-	Point* arrayOfPoints = InitArray(n);
-	DisplayPoints(arrayOfPoints, n);
-	delete[] arrayOfPoints;*/
-
-	//Point2D point;  
-#pragma endregion
-
 	Point* array = InitArray(9);
 
 	for (int i = 0; i < 9; i++)
