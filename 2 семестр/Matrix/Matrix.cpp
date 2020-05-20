@@ -22,12 +22,9 @@ Matrix::~Matrix()
 {
 	for (int i = 0; i < rows; i++)
 	{
-		for (int j = 0; j < columns; j++)
-		{
-			delete [] matrix[j];
-		}
 		delete[] matrix[i];
 	}
+	delete[] matrix;
 }
 
 ostream& operator<<(ostream& os, Matrix matrix)
