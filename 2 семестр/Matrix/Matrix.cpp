@@ -1,5 +1,6 @@
 #include "Matrix.h"
 #include <iostream>
+#include <fstream>
 
 Matrix::Matrix(int rows, int columns)
 {
@@ -18,6 +19,11 @@ Matrix::Matrix(int rows, int columns)
 	}
 }
 
+int* Matrix::operator[](int i)
+{
+	return this->matrix[i];
+}
+
 Matrix::~Matrix()
 {
 	for (int i = 0; i < rows; i++)
@@ -27,7 +33,7 @@ Matrix::~Matrix()
 	delete[] matrix;
 }
 
-ostream& operator<<(ostream& os, Matrix matrix)
+ostream& operator<<(ostream& os, Matrix& matrix)
 {
 	for (int i = 0; i < matrix.rows; i++)
 	{
@@ -38,4 +44,40 @@ ostream& operator<<(ostream& os, Matrix matrix)
 		os << endl;
 	}
 	return os;
+}
+
+ofstream& operator<<(ofstream& os, Matrix& matrix)
+{
+	for (int i = 0; i < matrix.rows; i++)
+	{
+		for (int j = 0; j < matrix.columns; j++)
+		{
+			os << matrix.matrix[i][j] << '\t';
+		}
+		os << endl;
+	}
+	return os;
+}
+
+ifstream& operator>>(ifstream& is, Matrix& matrix)
+{
+	for (int i = 0; i < matrix.rows; i++)
+	{
+		for (int j = 0; j < matrix.columns; j++)
+		{
+			is >> matrix.matrix[i][j];
+		}
+	}
+	return is;
+}
+
+int Matrix::getRows()
+{
+	return rows;
+}
+
+
+int Matrix::getColumns()
+{
+	return columns;
 }
