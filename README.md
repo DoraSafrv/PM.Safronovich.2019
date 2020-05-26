@@ -11,7 +11,7 @@
 ### 03.03.2020
 | Task | Task Status | Additional/Comments (+ link) |
 | -------- | -------- | --------|  
-|03.03.2020 | ![Scheduled](https://github.com/AnzhelikaKravchuk/.NET-Training.-Spring-2019/blob/master/Pictures/icons-ok.png)|[Link](https://github.com/DoraSafrv/PM.Safronovich.2019/tree/master/2%20%D1%81%D0%B5%D0%BC%D0%B5%D1%81%D1%82%D1%80/03.03.2020)
+|Class User | ![Scheduled](https://github.com/AnzhelikaKravchuk/.NET-Training.-Spring-2019/blob/master/Pictures/icons-ok.png)|[Link](https://github.com/DoraSafrv/PM.Safronovich.2019/tree/master/2%20%D1%81%D0%B5%D0%BC%D0%B5%D1%81%D1%82%D1%80/03.03.2020)
 
 
 ### 13.05.2020
