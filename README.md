@@ -31,5 +31,5 @@
 ### 25.03.2020
 | Task | Task Status | Additional/Comments (+ link) |
 | -------- | -------- | --------|  
-|Работа с текстовыми потоками ||[Link](https://github.com/DoraSafrv/PM.Safronovich.2019/tree/master/2%20%D1%81%D0%B5%D0%BC%D0%B5%D1%81%D1%82%D1%80/25.03.2020)
+|Работа с текстовыми потоками ||[Link](https://github.com/DoraSafrv/PM.Safronovich.2019/blob/master/2%20%D1%81%D0%B5%D0%BC%D0%B5%D1%81%D1%82%D1%80/25.03.2020/25.03.2020.cpp)
 
