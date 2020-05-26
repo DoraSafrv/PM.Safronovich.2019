@@ -23,6 +23,11 @@
 | -------- | -------- | --------|  --------|  --------|  --------|  
 | Класс Матрица + работа с текстовыми потоками| ![Scheduled](https://github.com/AnzhelikaKravchuk/.NET-Training.-Spring-2019/blob/master/Pictures/icons-ok.png)|[Matrix](https://github.com/DoraSafrv/PM.Safronovich.2019/tree/master/2%20%D1%81%D0%B5%D0%BC%D0%B5%D1%81%D1%82%D1%80/Matrix)|[Header](https://github.com/DoraSafrv/PM.Safronovich.2019/blob/master/2%20%D1%81%D0%B5%D0%BC%D0%B5%D1%81%D1%82%D1%80/Matrix/Matrix.h)|[///](https://github.com/DoraSafrv/PM.Safronovich.2019/blob/master/2%20%D1%81%D0%B5%D0%BC%D0%B5%D1%81%D1%82%D1%80/Matrix/Matrix.cpp)|[///](https://github.com/DoraSafrv/PM.Safronovich.2019/blob/master/2%20%D1%81%D0%B5%D0%BC%D0%B5%D1%81%D1%82%D1%80/Matrix/Task.cpp)
 ---
+### 12.02.2020
+| Task | Task Status | Additional/Comments (+ link) |
+| -------- | -------- | --------|  
+|Class Point | ![Scheduled](https://github.com/AnzhelikaKravchuk/.NET-Training.-Spring-2019/blob/master/Pictures/icons-ok.png)|[Link](https://github.com/DoraSafrv/PM.Safronovich.2019/tree/master/2%20%D1%81%D0%B5%D0%BC%D0%B5%D1%81%D1%82%D1%80/12.02.2020)
+
 ### 03.03.2020
 | Task | Task Status | Additional/Comments (+ link) |
 | -------- | -------- | --------|  
